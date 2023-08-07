@@ -9,4 +9,3 @@ __pycache__
 db.sqlite3
 devspace.yaml
 manifest.yaml
-.deployment.yaml
