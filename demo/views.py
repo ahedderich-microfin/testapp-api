@@ -11,8 +11,8 @@ def index(request):
 
 
 def view(request, orientation, output_type):
-    template = loader.get_template("demo/table2.html")
-    content = template.render({}, request)
+    template = loader.get_template("demo/table.html")
+    content = template.render({ "range": range(100) }, request)
     content_type = "text/html"
     if output_type == "pdf":
         content_type = "application/pdf"
